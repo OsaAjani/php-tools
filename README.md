@@ -7,7 +7,7 @@ Pour remplacer la chaine "$toto" par "$tata" dans tous les fichiers ".php" du do
 ./recursive_replace.php ./directory php '$toto' '$tata'
 ```
 
-Pour utiliser une regex pour remplacer toutes les chaines de la forme "<a href="*">" par "<a href="*" title="*"> :
+Pour utiliser une regex pour remplacer toutes les chaines de la forme "&lt;a href="*"&gt;" par "&lt;a href="*" title="*"&gt; :
 ```bash
 ./recursive_replace_regex.php .directory php '<a href="([^"]*)">' '<a href="\1" title="\1">'
 ```
